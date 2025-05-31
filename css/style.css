@@ -1,0 +1,18 @@
+
+* {
+/* CSS HSL */
+--robin-egg-blue: hsla(174, 54%, 50%, 1);
+--thistle: hsla(334, 25%, 83%, 1);
+--champagne-pink: hsla(19, 26%, 86%, 1);
+--amethyst: hsla(261, 65%, 64%, 1);
+--light-blue: hsla(182, 37%, 79%, 1);
+--tropical-indigo: hsla(261, 71%, 72%, 1);
+--platinum: hsla(12, 10%, 90%, 1);
+}
+
+body {
+    background-color: var(--platinum);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
