@@ -143,6 +143,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero {
+margin-bottom: 10px;
+  }
+
   .hero h1 {
     font-size: 2.2rem;
   }
@@ -161,5 +165,9 @@ footer {
 
   li {
     font-size: 0.9rem;
+  }
+
+  ul {
+    display: inline;
   }
 }
