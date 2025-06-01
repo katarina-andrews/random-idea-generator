@@ -1,18 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik+Glitch&display=swap");
 
 * {
-/* CSS HSL */
---robin-egg-blue: hsla(174, 54%, 50%, 1);
---thistle: hsla(334, 25%, 83%, 1);
---champagne-pink: hsla(19, 26%, 86%, 1);
---amethyst: hsla(261, 65%, 64%, 1);
---light-blue: hsla(182, 37%, 79%, 1);
---tropical-indigo: hsla(261, 71%, 72%, 1);
---platinum: hsla(12, 10%, 90%, 1);
+  /* CSS HSL */
+  --robin-egg-blue: hsla(174, 54%, 50%, 1);
+  --thistle: hsla(334, 25%, 83%, 1);
+  --champagne-pink: hsla(19, 26%, 86%, 1);
+  --amethyst: hsla(261, 65%, 64%, 1);
+  --light-blue: hsla(182, 37%, 79%, 1);
+  --tropical-indigo: hsla(261, 71%, 72%, 1);
+  --platinum: hsla(12, 10%, 90%, 1);
 }
 
-body {
-    background-color: var(--platinum);
-    min-width: 100vw;
-    min-height: 100vh;
+body,
+button {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-style: normal;
 }
 
+header {
+  background-image: url("https://images.unsplash.com/photo-1709651669999-57741c9bf085?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: contain;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero {
+  background-color: rgba(58, 201, 179, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 80vw;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: "Rubik Glitch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100vw;
+}
+
+nav a {
+  background-color: var(--amethyst);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  border: 1px black solid;
+}
+
+nav a:hover {
+  background-color: var(--tropical-indigo);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  background-color: var(--platinum);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--amethyst);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+ul {
+  padding-left: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  letter-spacing: 2px;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: var(--amethyst);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: var(--tropical-indigo);
+}
+
+footer {
+  margin-top: 10px;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+  text-decoration: underline overline;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}
