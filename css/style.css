@@ -107,19 +107,6 @@ p {
   letter-spacing: 2px;
 }
 
-ul {
-  padding-left: 1.5rem;
-  display: flex;
-  gap: 2rem;
-  letter-spacing: 2px;
-}
-
-li {
-  margin-bottom: 0.5rem;
-  list-style: disc;
-  font-size: 1.1rem;
-}
-
 button {
   background-color: var(--amethyst);
   color: white;
@@ -161,13 +148,5 @@ margin-bottom: 10px;
 
   p {
     font-size: 0.9rem;
-  }
-
-  li {
-    font-size: 0.9rem;
-  }
-
-  ul {
-    display: inline;
   }
 }
