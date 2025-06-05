@@ -21,5 +21,4 @@ function handleRandomIdea(event) {
   ideaElm.classList.remove("animate__animated", "animate__fadeIn");
   void ideaElm.offsetWidth;
   ideaElm.classList.add("animate__animated", "animate__fadeIn");
-  event.target.reset();
 }
